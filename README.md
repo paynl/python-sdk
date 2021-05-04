@@ -55,9 +55,9 @@ If you're more familiar with Python, you *could* use the full API request/respon
 Set configuration (this is a MUST and should always be done before doing anything with the SDK)
 ```
 from paynlsdk.api.client import APIAuthentication
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 ```
 
 Turn on debugging output for the API Client
@@ -75,9 +75,9 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.transaction import Transaction
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
     result = Transaction.get_banks()
@@ -99,9 +99,9 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.paymentmethods import PaymentMethods
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
     result = PaymentMethods.get_list()
@@ -124,9 +124,9 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.transaction import Transaction
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
     result = Transaction.info(transaction_id='1234567890X1a2b3')
@@ -147,9 +147,9 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.transaction import Transaction
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
     result = Transaction.status(transaction_id='1234567890X1a2b3')
@@ -171,9 +171,9 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.transaction import Transaction
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
     result = Transaction.refund(transaction_id='1234567890X1a2b3')
@@ -198,9 +198,9 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.refund import Refund
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
     result = Refund.transaction(transaction_id='1234567890X1a2b3')
@@ -226,12 +226,12 @@ from paynlsdk.api.client import APIAuthentication
 from paynlsdk.client.refund import Refund
 from paynlsdk.exceptions import *
 # Set mandatory basics
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 # Perform request
 try:
-    result = Refund.info(refund_id='RF-1234-1234')
+    result = Refund.info(refund_id='RF-####-####')
     print(result)
 except SchemaException as se:
     print('SCHEMA ERROR:\n\t' + str(se))
@@ -252,7 +252,7 @@ from paynlsdk.objects import OrderData, Address, Company, datetime, TransactionE
 from paynlsdk.exceptions import *
 # Set mandatory basics
 APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
+APIAuthentication.api_token = '****************************************'
 APIAuthentication.token_code = 'AT-xxxx-xxxx'
 # Perform request
 try:
@@ -333,9 +333,9 @@ Although you shouldn't normally need to, below is a complete example of this
 from paynlsdk.api.transaction.info import Request
 from paynlsdk.api.client import APIAuthentication, APIClient
 
-APIAuthentication.service_id = 'SL-xxxx-xxxx'
-APIAuthentication.api_token = '<yourtokenhere>'
-APIAuthentication.token_code = 'AT-xxxx-xxxx'
+APIAuthentication.service_id = 'SL-####-####'
+APIAuthentication.api_token = '****************************************'
+APIAuthentication.token_code = 'AT-####-####'
 
 # Create request.
 request = Request(transaction_id='1234567890X1a2b3')
